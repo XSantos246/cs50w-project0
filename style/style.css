@@ -1,0 +1,107 @@
+body {
+  top: 70px;
+  bottom: 70px;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+#top {
+  position: absolute;
+  width: 100%;
+  top: -70px;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+p {
+  text-align: justify;
+}
+
+.list, .moto-list {
+  border-width: 10px;
+  border-style: solid;
+  padding: 50px;
+}
+
+.moto-list {
+  border-color: #7198A0;
+}
+
+.collapse-but {
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.collapse-but:after {
+  float: right;
+  font-family: "Material Icons";
+  content: "\e316";
+}
+.collapse-but.collapsed:after {
+  float: right;
+  font-family: "Material Icons";
+  content: "\e313";
+}
+
+nav {
+  background-color: rgb(240, 253, 51);
+}
+nav .nav-link {
+  width: -moz-fit-content;
+  width: fit-content;
+  float: right;
+  position: relative;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: letter-spacing 1s;
+}
+nav .nav-link:hover {
+  text-decoration: none;
+  color: #000000;
+  letter-spacing: 3px;
+}
+nav .nav-link.active {
+  letter-spacing: 3px;
+}
+nav .nav-link.active:after {
+  border-bottom: 2px solid white;
+  content: "";
+  position: absolute;
+  margin-top: -1px;
+  left: 0;
+  right: 0;
+  top: 50%;
+  animation-name: line;
+  animation-duration: 1s;
+}
+
+@media (max-width: 767px) {
+  body {
+    top: 0px;
+  }
+  .nav {
+    text-align: center;
+    padding: 30px 0;
+  }
+  .nav-item {
+    margin: 0 auto;
+  }
+  .text-xs-center {
+    text-align: center;
+  }
+  .content {
+    padding-top: 30px;
+  }
+}
+@keyframes line {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
